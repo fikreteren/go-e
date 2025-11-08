@@ -13,9 +13,9 @@ eventually mean that there are several hardware cores, but a unicore processor, 
 
 But yeah.. I hope we can discuss mroe about that in-person at the next opportunity.
 
-## Starting the Appliction
-To start the program you can either run it locally on your machine via `./run.sh` (don't forget to chmod the script). Probably you don't want to install any other packages or versions of the compiler, therefore a provided a 
-docker environment, which can be invoked by `./docker.sh`.
+## Starting the Application
+To start the program you can either run it locally on your machine via `./run.sh` (don't forget to chmod the script). Probably you don't want to install any other packages or versions of the compiler, therefore I provided a 
+docker environment, which can be invoked by just calling `./docker.sh` (building image + running appl.).
 
 Best Regards,\
 *Fikret*
