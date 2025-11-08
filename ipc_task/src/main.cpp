@@ -46,6 +46,10 @@ void waitForChildsTermination(std::vector<pid_t>& pids)
     {
         waitpid(p, nullptr, 0);
     }
+
+    // Also, unlink the shm objects
+    shm_unlink(SHM_BlockIdentifier);
+    shm_unlink(SHM_MemProt);
 }
 
 /**

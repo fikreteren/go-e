@@ -76,7 +76,7 @@ int Process::mapToPhyPage(void)
 
     // calling ftruncate more than once with unchanged length will not affect/change
     // the shared memory object.
-    if (ftruncate(fd_buf, SHM_BlockSize) == -1 || ftruncate(fd_buf_lock, sizeof(sem_t)))    
+    if (ftruncate(fd_buf, SHM_BlockSize) == -1 || ftruncate(fd_buf_lock, sizeof(sem_t)) == -1)    
     {
         std::string error_msg = fmt::format("Failed to truncate the opened SHM objects for PID:{}", getpid());
         printMessage(MsgTypes::ERROR, error_msg);
